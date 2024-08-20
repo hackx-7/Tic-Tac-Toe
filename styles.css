@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4c2fc;
+    color: white;
+}
+
+.topBar {
+    display: flex;
+    flex-direction: column;
+    height: 12vh;
+    width: 30vw;
+    text-align: center;
+    padding: 0 2vw 5vh 3vw;
+    gap: 3vh;
+    border-radius: 4vh;
+    font-family: "Pacifico", cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: xx-large;
+    color: #28262c;
+    align-items: center;
+}
+
+.topBar h3{
+    background-color: #c9b4f4d3;
+    color: #240046;
+    border-radius: 1vh;
+    border: 5px solid black white;
+    border-style:inset;
+    padding: 0.5vh 1.5vw;
+}
+
+.topBar p {
+    width: 26vw;
+    border-radius: 2vh;
+    padding: 1vh 3vh 1vh 2.5vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5vw;
+    color: #28262c;
+}
+
+.msg {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.msg.show {
+    color: white;
+    background-color: #28262c;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.mainWin {
+    height: 60vh;
+    width: 60vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grids {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50vh;
+    width: 50vw;
+    margin: 1vh 12vw;
+}
+
+.button {
+    height: 15vh;
+    width: 10vw;
+    margin: 1vh 0.7vw 1vh 0.7vw;
+    color: white;
+    background-color: #f49cbb;
+    border: none;
+    border-radius: 3vh;
+    font-size: xx-large;
+    font-family: "Poppins", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.1s ease-out;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: #f1f5f2;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.funcbtns {
+    height: 7vh;
+    width: 12vw;
+    border-radius: 2vh;
+    background-color: #28262c;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: large;
+    transition: background-color 0.2s ease-in, color 0.2s ease-out;
+}
+
+.funcbtns:hover {
+    background-color: white;
+    color: #28262c;
+}
+
+.btnsBar {
+    height: 15vh;
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
