@@ -134,3 +134,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
 }
+
+.hide{
+    display: none;
+}
